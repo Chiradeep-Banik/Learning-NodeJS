@@ -9,7 +9,6 @@
   "author": "banik",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.13.7",
-    "underscore": "^1.13.1"
+    "express": "^4.17.1"
   }
 }
