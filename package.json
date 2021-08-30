@@ -1,14 +1,5 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
-  "description": "Me trying to learn node js",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "banik",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "nodemon": "^2.0.12"
   }
 }
