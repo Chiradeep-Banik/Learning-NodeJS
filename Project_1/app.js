@@ -2,8 +2,6 @@ const chalk = require('chalk');
 const fs = require('fs');
 const yargs = require('yargs');
 
-//{"f1":"from_f1","f2":"from_f2","f3":"from_f3"}
-
 //add
 yargs.command({
     command: 'add',
