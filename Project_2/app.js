@@ -9,6 +9,6 @@ const https = require('https');
 // const geo_url = geocode_url+"?location=Agartala,Tripura&key="+geo_api_key;
 //zxas@gmail.com ----   zxcvbnm,./123
 
-// var place = process.argv[2];
-// if(place === undefined) console.log("Please enter a place");
-// else utils.Get_weather(place,utils.callback);
+var place = process.argv[2];
+if(place === undefined) console.log("Please enter a place");
+else utils.Get_weather(place,utils.callback);
