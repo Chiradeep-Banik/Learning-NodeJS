@@ -20,3 +20,4 @@ Started learning nodejs from Youtube and Udemy(Andrew Mead)
     - Used the request module to fetch the weather data from the API
     - Took data from the user and used a GEOCODE api to get the latitude and longitude
     - Used another api to get the weather data from the latitude and longitude
+    - Used callback pipelining to feed the data from one api to another
