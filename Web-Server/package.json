@@ -1,7 +1,7 @@
 {
-  "name": "@vikram_1313/weather_app",
+  "name": "web-server",
   "version": "1.0.0",
-  "description": "Gives us the weather at a particular place",
+  "description": "my server",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,6 @@
   "author": "banik",
   "license": "ISC",
   "dependencies": {
-    "postman-request": "^2.88.1-postman.30"
+    "express": "^4.17.1"
   }
 }
