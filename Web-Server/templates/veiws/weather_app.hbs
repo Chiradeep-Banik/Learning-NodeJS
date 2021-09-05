@@ -7,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common_styles.css">
 </head>
 
 <body>
+    {{>nav}}
     <div id="app">
         <div class="in">
             <label>Enter a place : </label>
-            <input type="text"><br>
+            <input type="text" placeholder="{{place_holder}}"><br>
         </div>
         <button type="submit">Search</button>
     </div>
-    <script src="script.js"></script>
+    {{> footer }}
+    <script src="../public/script.js"></script>
 </body>
 
 </html>
