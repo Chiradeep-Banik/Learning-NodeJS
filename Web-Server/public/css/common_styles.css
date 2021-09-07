@@ -22,6 +22,9 @@ ul li{
     padding: 0.5rem 2.5rem;
     border: 0.3rem solid black;
 }
+ul li:hover{
+    background-color: rgba(0, 0, 0, 0.363);
+}
 a{
     font-size: 5rem;
     text-decoration: none;

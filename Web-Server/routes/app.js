@@ -31,7 +31,8 @@ app.get('/weather',(req,res)=>{
         title: 'Weather Page',
         style_common: 'common_styles.css',
         style_page: 'weather_style.css',
-        place_holder:'e.g. Agartala'
+        place_holder:'e.g. Agartala',
+        script : 'weather.js'
     });
 });
 
