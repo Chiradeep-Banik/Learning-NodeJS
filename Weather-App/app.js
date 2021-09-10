@@ -1,5 +1,4 @@
 const utils = require('./utils');
-const https = require('https');
 
 // const api_key = "b0bc6917eb8b4d2587a94d4ca01c067a";
 // const geo_api_key = "kKQnmMrSTwvkXeX3LFuu7oMb8xlicwTO";

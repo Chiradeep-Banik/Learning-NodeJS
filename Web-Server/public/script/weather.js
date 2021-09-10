@@ -1,5 +1,6 @@
 console.log("weather.js");
 
+var request = require('postman-request'); 
 var text_input = document.querySelector("input");
 var button = document.querySelector("button");
 var app = document.querySelector("#app");

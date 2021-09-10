@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/{{style_page}}">
 </head>
 <body>
+    {{> nav}}
     {{{ body }}}
     {{#if script}}
         <script src="script/{{script}}"></script>
     {{/if}}
+    {{> footer}}
 </body>
 </html>

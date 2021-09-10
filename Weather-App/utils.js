@@ -25,7 +25,7 @@ const weather = (lat, lon, callback) => {
         }
     });
 };
-var we_callback = (err,data)=>{
+var we_callback = (err,data)=>{ 
     if(err){
         console.log(err);
     }else{
