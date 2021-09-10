@@ -37,14 +37,27 @@ app.get('/weather',(req,res)=>{
     });
 });
 app.get('/get_weather',(req,res)=>{
-    var addrs = req.query.address;
-    var w = utils.Get_weather(addrs,utils.callback);
-    console.log(addrs,w);
-    if(!addrs){
+    var address = req.query.address;
+    if(!address){
         res.send({error:'Please enter a valid address'});
     }else{
-        res.send({
-            weather: addrs
+        utils.lat_lang(address,(error,data)=>{
+            if(error){
+                res.send({ error: error });
+            }else{
+                var lat = data.lat;
+                var lng = data.lng;
+                utils.weather(lat,lng,(err,data)=>{
+                    if(err){
+                        res.send({ error: err });
+                    }else{
+                        res.send({
+                            place : address,
+                            weather: `${data.weather.description}.It is ${data.temp} deg in ${data.city_name}, ${data.country_code} but feels like ${data.app_temp}.`
+                        });
+                    }
+                });
+            }
         });
     }
 });
